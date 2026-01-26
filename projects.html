@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Projects</title>
@@ -10,46 +10,80 @@
 <body>
 
 <div class="container mt-5">
-
     <h2 class="text-center mb-4">My Projects</h2>
 
     <div class="row">
-
         <!-- CARD 1 -->
         <div class="col-md-4">
-            <div class="card">
+            <div class="card project-card">
                 <img src="images/project1.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Website Design</h5>
                     <p class="card-text">HTML & CSS website.</p>
-
-                    <button class="btn btn-primary"
-                        data-bs-toggle="modal"
-                        data-bs-target="#modal1">
-                        View Details
-                    </button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">View Details</button>
                 </div>
             </div>
         </div>
 
-    </div>
+        <!-- CARD 2 -->
+        <div class="col-md-4">
+            <div class="card project-card">
+                <img src="images/project2.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Portfolio Template</h5>
+                    <p class="card-text">Bootstrap responsive template.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">View Details</button>
+                </div>
+            </div>
+        </div>
 
+        <!-- CARD 3 -->
+        <div class="col-md-4">
+            <div class="card project-card">
+                <img src="images/project3.jpg" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Simple Web App</h5>
+                    <p class="card-text">HTML, CSS, Bootstrap web app.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- MODAL -->
+<!-- MODALS -->
 <div class="modal fade" id="modal1">
     <div class="modal-dialog">
         <div class="modal-content">
-
             <div class="modal-header">
-                <h5 class="modal-title">Project Details</h5>
+                <h5 class="modal-title">Website Design</h5>
                 <button class="btn-close" data-bs-dismiss="modal"></button>
             </div>
+            <div class="modal-body">This project was built using HTML and CSS.</div>
+        </div>
+    </div>
+</div>
 
-            <div class="modal-body">
-                This project was built using HTML, CSS and Bootstrap.
+<div class="modal fade" id="modal2">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Portfolio Template</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
             </div>
+            <div class="modal-body">This project was built using Bootstrap 5.</div>
+        </div>
+    </div>
+</div>
 
+<div class="modal fade" id="modal3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Simple Web App</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">This project combines HTML, CSS, and Bootstrap components.</div>
         </div>
     </div>
 </div>
